@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diabetes care</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/animate.css">
+
+  <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="static/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="static/css/magnific-popup.css">
+
+  <link rel="stylesheet" href="static/css/aos.css">
+
+  <link rel="stylesheet" href="static/css/ionicons.min.css">
+
+  <link rel="stylesheet" href="static/css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="static/css/jquery.timepicker.css">
+
+
+  <link rel="stylesheet" href="static/css/flaticon.css">
+  <link rel="stylesheet" href="static/css/icomoon.css">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("img_girl.jpg");
+
+  /* Full height */
+  height: 100vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+
+  text-shadow: 8px 8px 16px white;
+<!--  animation: mymove 5s infinite;-->
+}
+
+<!--@keyframes mymove {-->
+<!--  50% {text-indent: 150px;}-->
+<!--}-->
+h2 {
+
+  text-shadow: 4px 4px 8px white;
+}
+</style>
+</head>
+<body>
+<form action="{{url_for('index')}}" method="POST">
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+        <h1><a class="navbar-brand" href="index.html" style="color:red;">Diabetes <span style="color:black;">Care</span></a></h1>
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a href="/" class="nav-link"  style="color:black;">Home</a></li>
+          <li class="nav-item"><a href="/about" class="nav-link"  style="color:black;">About</a></li>
+          <li class="nav-item"><a href="/login" class="nav-link"  style="color:black;">Login</a></li>
+          <li class="nav-item cta"><a href="/Register" class="nav-link"  style="color:black;">Register</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END nav -->
+      <section id="hero">
+        <center><div class="hero-container">
+            <div id="heroCarousel" data-bs-interval="50" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+                <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+                <div class="carousel-inner" role="listbox">
+
+                    <!-- Slide 1 -->
+                    <div class="bg"  style="background-image: url(static/images/d-1.jpg);height: 100vh;">
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                            <b><ul><u> <h1 class="animate__animated animate__fadeInDown"style="padding-top: 300px; color:red;">Diabetes Care</span></h1></ul></u></b>
+                              <h2 class="animate__animated animate__fadeInUp" style="color:blue;">Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is too high. </h2>
+                        </div>
+
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+                </a>
+
+                <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+                </a>
+
+            </div>
+        </div>
+
+        </center>
+    </section>
+
+</form>
+
+<!--  <section class="home-slider owl-carousel" style="height: 100vh;">-->
+
+<!--    <div class="slider-item" style="background-image: url('static/images/d-1.jpg');" >-->
+<!--      <div class="overlay"></div>-->
+<!--      <div class="container">-->
+<!--        <div class="row slider-text align-items-center" data-scrollax-parent="true">-->
+<!--          <div class="col-md-6 col-sm-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">-->
+<!--            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Diabetes Care </h1>-->
+<!--            <h2 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"  style="color:blue;">Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is too high. Blood glucose is your main source of energy and comes from the food you eat. Insulin, a hormone made by the pancreas, helps glucose from food get into your cells to be used for energy</h2>-->
+
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+    <!--    <div class="slider-item" style="background-image: url('static/images/d-3.jpg');">-->
+    <!--      <div class="overlay"></div>-->
+    <!--      <div class="container">-->
+    <!--        <div class="row slider-text align-items-center" data-scrollax-parent="true">-->
+    <!--          <div class="col-md-6 col-sm-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">-->
+    <!--            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Diabetes Care</h1>-->
+    <!--            <h3 class="mb-4" style="color:blue;">Although not everyone with type 2 diabetes is overweight, obesity and an inactive lifestyle are two of the most common causes of type 2 diabetes. These things are responsible for about 90% to 95% of diabetes cases in the United States.</h3>-->
+
+    <!--          </div>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--    </div>-->
+<!--  </section>-->
+<!--</form>-->
+
+
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/jquery-migrate-3.0.1.min.js"></script>
+<script src="static/js/popper.min.js"></script>
+<script src="static/js/bootstrap.min.js"></script>
+<script src="static/js/jquery.easing.1.3.js"></script>
+<script src="static/js/jquery.waypoints.min.js"></script>
+<script src="static/js/jquery.stellar.min.js"></script>
+<script src="static/js/owl.carousel.min.js"></script>
+<script src="static/js/jquery.magnific-popup.min.js"></script>
+<script src="static/js/aos.js"></script>
+<script src="static/js/jquery.animateNumber.min.js"></script>
+<script src="static/js/bootstrap-datepicker.js"></script>
+<script src="static/js/jquery.timepicker.min.js"></script>
+<script src="static/js/scrollax.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+<script src="static/js/google-map.js"></script>
+<script src="static/js/main.js"></script>
+
+</body>
+</html>

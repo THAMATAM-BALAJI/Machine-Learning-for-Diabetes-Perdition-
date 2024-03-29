@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Supervised and Unsupervised Machine Learning based Review on Diabetes Care  - Free Bootstrap 4 Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/animate.css">
+
+    <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="static/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="static/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="static/css/aos.css">
+
+    <link rel="stylesheet" href="static/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="static/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="static/css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="static/css/flaticon.css">
+    <link rel="stylesheet" href="static/css/icomoon.css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("img_girl.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1 {
+
+  text-shadow: 2px 2px 4px black;
+}
+</style>
+</head>
+
+
+<body>
+<form action="{{url_for('detection')}}" method="POST" >
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+           <h1> <a class="navbar-brand" href="index.html" style="color:red;">Diabetes<span style="color:black;">Care</span></a></h1>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item "><a href="/loginhomepage" class="nav-link" style="color:black;">Home</a></li>
+                    <li class="nav-item"><a href="/uploaddata" class="nav-link" style="color:black;">upload dataset</a></li>
+                    <li class="nav-item "><a href="/viewdata" class="nav-link" style="color:black;">view dataset</a></li>
+                    <li class="nav-item "><a href="/training" class="nav-link" style="color:black;">training</a></li>
+                    <li class="nav-item active"><a href="/detection" class="nav-link" style="color:black;">detection</a></li>
+                    <li class="nav-item cta"><a href="/" class="nav-link"  style="color:black;">logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END nav -->
+
+
+
+    <section id="about" class="bg">
+        <div class="slider-item" style="background-image: url('static/images/d-7.jpg'); height: 100vh; background-size: cover;" >
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <!--            <img src="static/images/slide-1.jpg" class="img-fluid" alt=""width="1500" height="400">-->
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0 content">
+                    </div></div></div>
+
+            <center><h1 style="margin-top:100px;">{{ msg|safe}}</h1></center>
+
+
+            <!--        <form action="/detection" method="POST" >-->
+            <table>
+                <div class="container">
+                    <div class = "row">
+                        <div class="col-md-1">
+                            <label for="numpreg" style=" margin-right: 10px; color:black;">Num Pregnancies</label>
+                        </div>
+                        <div class="col-md-3">
+                            <input name="numpreg" type="number" placeholder="numpreg" id="numpreg" style="margin-right: 30px;">
+                        </div>
+                        <div class="col-md-1">
+                            <label for="glucoseconc" style=" margin-right: 10px; color:black;">Glucose</label>
+                        </div>
+                        <div class="col-md-3">
+
+                            <input name="glucoseconc" type="number" placeholder="glucoseconc" id="glucoseconc">
+                        </div>
+                        <div class="col-md-1">
+                            <label for="diastolicbp" style=" margin-right: 10px; color:black;">Diastolic BP</label>
+                        </div>
+                        <div class="col-md-3">
+
+                            <input name="diastolicbp" type="number" placeholder="diastolicbp" style=" margin-bottom: 20px;" id="diastolicbp">
+                        </div>
+                    </div>
+                </div> </table>
+            <table>
+                <div class="container">
+                    <div class = "row">
+                        <div class="col-md-1">
+                            <label for="thickness" style=" margin-right: 20px; color:black;">Skin Thickness</label>
+                        </div>
+                        <div class="col-md-3">
+                            <input name="thickness" type="number" placeholder="skin thickness" id="thickness" style="margin-right: 20px;">
+                        </div>
+                        <div class="col-md-1">
+                            <label for="insulin" style=" margin-right: 10px; color:black;">Insulin</label>
+                        </div>
+                        <div class="col-md-3">
+
+                            <input name="insulin" type="number" placeholder="insulin" id="insulin">
+                        </div>
+                        <div class="col-md-1">
+                            <label for="bmi" style=" margin-right: 10px; color:black;">BMI</label>
+                        </div>
+                        <div class="col-md-3">
+
+                            <input name="bmi" type="number" placeholder="bmi" style=" margin-bottom: 20px;" id="bmi" style="margin-right: 10px;">
+                        </div>
+                    </div>
+                </div></table>
+
+
+            <table>
+                <div class="container">
+                    <div class = "row">
+                        <div class="col-md-1">
+                            <label for="diabpred" style=" margin-right: 20px; color:black;">Diabetes pedigree</label>
+                        </div>
+                        <div class="col-md-3">
+                            <input name="diabpred" type="number" placeholder="diabpred" id="diabpred" style="margin-right: 10px;">
+                        </div>
+                        <div class="col-md-1">
+                            <label for="age" style=" margin-right: 10px; color:black;">Age</label>
+                        </div>
+                        <div class="col-md-3">
+
+                            <input name="age" type="number" placeholder="age" id="age">
+                        </div>
+
+                        <div class="col-md-1">
+                            <label for="skin" style="margin-right: 10px; color:black;">Skin Infection</label>
+                        </div>
+
+                        <div class="col-md-3">
+
+                            <input name="skin" type="number" placeholder="skin infection" style=" margin-bottom: 20px; margin-right: 20px;" id="skin">
+                        </div>
+
+                    </div>
+                </div></table>
+<!--            <center>-->
+<!--                &lt;!&ndash;                            <div class="col-md-1">&ndash;&gt;-->
+<!--                <label for="diabetes" style=" margin-right: 10px; color:black; ">diabetes</label>-->
+<!--                &lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--                &lt;!&ndash;                            <div class="col-md-3">&ndash;&gt;-->
+
+<!--                <input name="diabetes" type="number" placeholder="diabetes" style=" margin-bottom: 20px; margin-right: 60px;" id="diabetes">-->
+<!--                &lt;!&ndash;                            </div>&ndash;&gt;-->
+
+<!--            </center>-->
+
+
+
+
+            <center>
+                <input type="submit"  value="submit">
+            </center>
+
+
+            <!--        </form>-->
+    </section>
+</form>
+
+
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/jquery-migrate-3.0.1.min.js"></script>
+<script src="static/js/popper.min.js"></script>
+<script src="static/js/bootstrap.min.js"></script>
+<script src="static/js/jquery.easing.1.3.js"></script>
+<script src="static/js/jquery.waypoints.min.js"></script>
+<script src="static/js/jquery.stellar.min.js"></script>
+<script src="static/js/owl.carousel.min.js"></script>
+<script src="static/js/jquery.magnific-popup.min.js"></script>
+<script src="static/js/aos.js"></script>
+<script src="static/js/jquery.animateNumber.min.js"></script>
+<script src="static/js/bootstrap-datepicker.js"></script>
+<script src="static/js/jquery.timepicker.min.js"></script>
+<script src="static/js/scrollax.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+<script src="static/js/google-map.js"></script>
+<script src="static/js/main.js"></script>
+
+</body>
+</html>
